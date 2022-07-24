@@ -28,4 +28,13 @@
 	.btn {
 		@apply bg-white text-black p-2 place-self-end active:translate-y-1 active:translate-x-1 active:shadow-none hover:shadow-lg transition-all duration-150 cursor-pointer rounded-md;
 	}
+	.mainContainer {
+		@apply px-2 max-w-6xl mx-auto;
+	}
+	.input {
+		@apply p-2 font-mono rounded-lg w-1/2 border-2 border-black focus:border-purple-700 transition-colors duration-150 outline-none;
+	}
+	.inputArea {
+		@apply p-5 font-mono rounded-lg w-1/2 border-2 border-black focus:border-purple-700 transition-colors duration-150 outline-none;
+	}
 }

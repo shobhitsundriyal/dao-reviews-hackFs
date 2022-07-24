@@ -2,9 +2,28 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/HomePage/Header'
 import heroImage from '../assets/heroImage.png'
+import { useContext, useEffect } from 'react'
+import { UserContext } from '../Contexts/UserContext'
+import {
+	checkMetamaskConnected,
+	connectMetamask,
+} from '../functions/metamaskFunctions'
 // import Image from 'next/image'
 
 export default function Home() {
+	const { userAddr, setUserAddr } = useContext(UserContext)
+
+	useEffect(() => {
+		const onStart = async () => {
+			const account = await checkMetamaskConnected()
+			if (account) {
+				setUserAddr(account)
+			}
+		}
+		console.log('dd')
+		onStart()
+	}, [])
+
 	return (
 		<div className=''>
 			<Head>
@@ -16,7 +35,7 @@ export default function Home() {
 				<Header />
 
 				{/* hero area  */}
-				<div className='flex mx-auto max-w-6xl justify-between items-center h-[80%] space-x-5'>
+				<div className='flex mx-auto max-w-6xl px-2 justify-between items-center h-[80%] space-x-5'>
 					{/* left side text  */}
 					<div className=' space-y-12 text-white max-w-[47%] my-auto'>
 						<div className=' text-6xl font-bold font-sans'>
