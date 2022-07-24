@@ -13,17 +13,6 @@ import {
 export default function Home() {
 	const { userAddr, setUserAddr } = useContext(UserContext)
 
-	// useEffect(() => {
-	// 	const onStart = async () => {
-	// 		const account = await checkMetamaskConnected()
-	// 		if (account) {
-	// 			setUserAddr(account)
-	// 		}
-	// 	}
-	// 	console.log('dd')
-	// 	onStart()
-	// }, [])
-
 	return (
 		<div className=''>
 			<Head>
@@ -39,11 +28,11 @@ export default function Home() {
 					{/* left side text  */}
 					<div className=' space-y-12 text-white max-w-[47%] my-auto'>
 						<div className=' text-6xl font-bold font-sans'>
-							Big catchpharase
+							Review Daos
 						</div>
 						<div className=' text-2xl'>
-							one line descritionone line descrition one line
-							descrition one line descrition one line descrition
+							Help the community by giving a review about daos you
+							are part of.
 						</div>
 						<button className='btn font-mono'>Review</button>
 					</div>
