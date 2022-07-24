@@ -9,6 +9,7 @@ import checkIcon from '../../assets/checkIcon.svg'
 import listIcon from '../../assets/listIcon.svg'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
+// import fs from 'fs'
 
 function Header() {
 	const { userAddr, setUserAddr } = useContext(UserContext)

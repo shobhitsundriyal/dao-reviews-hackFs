@@ -13,16 +13,16 @@ import {
 export default function Home() {
 	const { userAddr, setUserAddr } = useContext(UserContext)
 
-	useEffect(() => {
-		const onStart = async () => {
-			const account = await checkMetamaskConnected()
-			if (account) {
-				setUserAddr(account)
-			}
-		}
-		console.log('dd')
-		onStart()
-	}, [])
+	// useEffect(() => {
+	// 	const onStart = async () => {
+	// 		const account = await checkMetamaskConnected()
+	// 		if (account) {
+	// 			setUserAddr(account)
+	// 		}
+	// 	}
+	// 	console.log('dd')
+	// 	onStart()
+	// }, [])
 
 	return (
 		<div className=''>

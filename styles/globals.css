@@ -32,9 +32,9 @@
 		@apply px-2 max-w-6xl mx-auto;
 	}
 	.input {
-		@apply p-2 font-mono rounded-lg w-1/2 border-2 border-black focus:border-purple-700 transition-colors duration-150 outline-none;
+		@apply p-2 font-mono rounded-lg w-[100%] lg:w-2/3 border-2 border-black focus:border-purple-700 transition-colors duration-150 outline-none;
 	}
 	.inputArea {
-		@apply p-5 font-mono rounded-lg w-1/2 border-2 border-black focus:border-purple-700 transition-colors duration-150 outline-none;
+		@apply p-5 font-mono rounded-lg w-[100%] lg:w-2/3 border-2 border-black focus:border-purple-700 transition-colors duration-150 outline-none;
 	}
 }
